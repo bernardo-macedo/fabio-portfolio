@@ -1,0 +1,49 @@
+:root {
+  /*FONTS*/
+  --font-main: "Inter", sans-serif;
+  --font-title: "Source Serif 4", serif;
+
+  /*FONT SIZE*/
+  --text-xsmall: 0.6rem;
+  --text-small: 0.75rem;
+  --text-medium: 1rem;
+  --text-large: 1.5rem;
+  --text-title: 2rem;
+
+  /*FONT WEIGHT*/
+  --font-light: 200;
+  --font-regular: 500;
+  --font-bold: 600;
+
+  /*COLORS*/
+  --color-main: #282829;
+  --color-secondary: #909091;
+  --color-background: #ededed;
+
+  /*NAV LOGO SIZE*/
+  --logo-width: 5rem;
+
+  /*SPACING*/
+  --spacing-xsmall: 0.5rem;
+  --spacing-small: 1rem;
+  --spacing-medium: 3rem;
+  --spacing-large: 5rem;
+
+  /*PADDING*/
+  --padding-xsmall: var(--spacing-xsmall);
+  --padding-small: var(--spacing-small);
+  --padding-medium: var(--spacing-medium);
+  --padding-large: var(--spacing-large);
+  --padding-xlarge: 14rem;
+
+  /*MARGIN*/
+  --margin-small: 0.3rem;
+  --margin-medium: 0.5rem;
+  --margin-large: 1.5rem;
+
+  /*OPACITY*/
+  --opacity-hover: 0.7;
+
+  /*BREAKPOINTS*/
+  --breakpoint-mobile: 768px;
+}

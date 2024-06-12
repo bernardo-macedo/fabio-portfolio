@@ -1,0 +1,115 @@
+@import "_reset.css";
+@import "_variables.css";
+@import "_utility.css";
+@import "_global.css";
+
+h1 {
+  padding-inline: 5rem;
+}
+
+form {
+  padding-left: 12rem;
+  padding-right: 10rem;
+}
+
+form > div:first-of-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+label {
+  font-weight: var(--font-bold);
+}
+
+label,
+input:placeholder-shown,
+textarea:placeholder-shown,
+select,
+option {
+  letter-spacing: 0.2rem;
+}
+
+option {
+  background-color: var(--color-background);
+}
+
+input:focus,
+textarea:focus {
+  letter-spacing: 0rem;
+}
+
+input,
+textarea {
+  padding-block: var(--spacing-xsmall);
+  background: none;
+  border-bottom: 2px solid transparent;
+  transition: 0.5s;
+}
+
+select {
+  border: none;
+  background: none;
+  padding-block: var(--spacing-xsmall);
+}
+
+input:focus,
+textarea:focus {
+  border-bottom: 2px solid var(--color-main);
+}
+
+input::placeholder {
+  font-weight: var(--font-light);
+}
+
+textarea {
+  font-family: var(--font-main);
+  resize: none;
+}
+
+#submit-form {
+  height: 50px;
+  font-family: var(--font-main);
+  font-weight: var(--font-bold);
+  display: flex;
+  align-items: center;
+}
+
+#submit-form:hover {
+  opacity: 0.5;
+}
+
+#menu-mobile button {
+  display: block;
+}
+
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: var(--color-background);
+  left: 0;
+  right: 0;
+  height: calc(100vh - var(--padding-small) - 8rem);
+}
+
+footer {
+  margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    padding-inline: 0rem;
+  }
+  form,
+  #contactos {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  form > div:first-of-type {
+    grid-template-columns: 1fr;
+  }
+}

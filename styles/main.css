@@ -1,0 +1,68 @@
+@import "_reset.css";
+@import "_variables.css";
+@import "_utility.css";
+@import "_global.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+
+header {
+  height: 100vh;
+  padding: var(--padding-large) var(--padding-xlarge);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-medium);
+}
+
+header > section:first-child {
+  overflow: hidden;
+}
+
+header > section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+
+  #menu-mobile button {
+    display: block;
+  }
+
+  header > section:nth-child(2) > nav > ul,
+  header > section:nth-child(2) > nav > div {
+    display: none;
+  }
+
+  header > section:first-child {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: var(--color-background);
+    left: 0;
+    right: 0;
+    height: calc(100vh - var(--padding-small) - 6rem);
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  header {
+    padding: var(--padding-small) var(--padding-small);
+  }
+}

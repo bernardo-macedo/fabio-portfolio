@@ -1,0 +1,101 @@
+@import "_reset.css";
+@import "_variables.css";
+
+body {
+  background: var(--color-background);
+  font-family: var(--font-main);
+  font-weight: var(--font-regular);
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-weight: var(--font-regular);
+  font-size: var(--text-title);
+  letter-spacing: 0.2rem;
+  margin-block: var(--margin-medium);
+}
+
+img {
+  overflow: hidden;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-inline: var(--padding-xlarge);
+  padding-block: var(--padding-small);
+  background: #90909120;
+}
+
+footer a:hover {
+  opacity: 0.5;
+}
+
+#menu-mobile {
+  width: 100%;
+}
+
+#menu-mobile > div:first-child {
+  height: 6rem;
+}
+
+#menu-mobile button {
+  display: none;
+}
+
+#menu-mobile .logo {
+  margin-left: auto;
+}
+
+.nav-mobile {
+  display: none;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  transition-duration: 300ms;
+  z-index: 9;
+}
+
+.nav-mobile > div {
+  margin-top: var(--spacing-medium);
+}
+
+.logo:hover {
+  opacity: var(--opacity-hover);
+}
+
+.logo > img {
+  width: 4rem;
+  height: auto;
+}
+
+nav {
+  align-self: end;
+  justify-self: center;
+  width: 100%;
+  letter-spacing: 0.2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li:hover,
+nav a:hover {
+  opacity: var(--opacity-hover);
+}
+
+nav > div {
+  height: 30px;
+}
+
+nav > div img {
+  height: 100%;
+}
+
+nav img:hover {
+  opacity: var(--opacity-hover);
+}

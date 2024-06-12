@@ -1,0 +1,297 @@
+@import "_variables.css";
+/*UTILITY CLASSES*/
+
+.title-font {
+  font-family: var(--font-title);
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.gap-small {
+  gap: var(--spacing-small);
+}
+
+.gap-medium {
+  gap: var(--spacing-medium);
+}
+
+.gap-large {
+  gap: var(--spacing-large);
+}
+
+.is-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-self-end {
+  align-self: end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
+.image-cover {
+  object-fit: cover;
+}
+
+.bt-text {
+  writing-mode: tb;
+  transform: rotate(-180deg);
+  letter-spacing: 0.1rem;
+}
+
+/*TEXT*/
+.text-xsmall {
+  font-size: var(--text-xsmall);
+}
+
+.text-small {
+  font-size: var(--text-small);
+}
+
+.text-medium {
+  font-size: var(--text-medium);
+}
+
+.text-large {
+  font-size: var(--text-large);
+}
+
+.text-title {
+  font-size: var(--text-title);
+}
+
+.font-regular {
+  font-weight: var(--font-regular);
+}
+
+.font-bold {
+  font-weight: var(--font-bold);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.letter-spacing-small {
+  letter-spacing: 0.1rem;
+}
+
+.letter-spacing-medium {
+  letter-spacing: 0.15rem;
+}
+
+.letter-spacing-large {
+  letter-spacing: 0.2rem;
+}
+
+/*PADDING*/
+.padding-small-x {
+  padding-inline: var(--padding-small);
+}
+.padding-small-y {
+  padding-block: var(--padding-small);
+}
+
+.padding-small-left {
+  padding-left: var(--padding-small);
+}
+.padding-small-right {
+  padding-right: var(--padding-small);
+}
+
+.padding-medium-x {
+  padding-inline: var(--padding-medium);
+}
+
+.padding-medium-y {
+  padding-block: var(--padding-medium);
+}
+
+.padding-medium-left {
+  padding-left: var(--padding-medium);
+}
+
+.padding-medium-right {
+  padding-right: var(--padding-medium);
+}
+
+.padding-large-x {
+  padding-inline: var(--padding-large);
+}
+
+.padding-large-y {
+  padding-block: var(--padding-large);
+}
+
+.padding-large-left {
+  padding-left: var(--padding-large);
+}
+
+.padding-large-right {
+  padding-right: var(--padding-large);
+}
+
+.padding-xlarge-x {
+  padding-inline: var(--padding-xlarge);
+}
+
+.padding-xlarge-y {
+  padding-block: var(--padding-xlarge);
+}
+
+.padding-xlarge-left {
+  padding-left: var(--padding-xlarge);
+}
+
+.padding-xlarge-right {
+  padding-right: var(--padding-xlarge);
+}
+
+/*MARGINS*/
+.margin-top-small {
+  margin-top: var(--spacing-small);
+}
+
+.margin-bottom-small {
+  margin-bottom: var(--spacing-small);
+}
+
+.margin-top-medium {
+  margin-top: var(--spacing-medium);
+}
+
+.margin-bottom-medium {
+  margin-bottom: var(--spacing-medium);
+}
+
+.margin-top-large {
+  margin-top: var(--spacing-large);
+}
+
+.margin-block-xsmall {
+  margin-block: var(--spacing-xsmall);
+}
+
+.margin-block-small {
+  margin-block: var(--spacing-small);
+}
+
+.margin-block-medium {
+  margin-block: var(--spacing-medium);
+}
+
+.margin-block-large {
+  margin-block: var(--spacing-large);
+}
+
+/*CONTAINER*/
+.container {
+  padding-inline: var(--padding-xlarge);
+  padding-block: var(--padding-xsmall);
+}
+
+@media screen and (max-width: 1125px) {
+  .container {
+    padding-inline: var(--padding-medium);
+  }
+}
+
+/*WIDTH*/
+.full-width {
+  width: 100%;
+}
+
+/*DISPLAY*/
+
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+/*TRANSFORM*/
+.translate-full-x {
+  transform: translateX(100%);
+}
+
+.translate-0-x {
+  transform: translateX(0px);
+}
+
+/*BURGER MENU*/
+.hamburguer {
+  cursor: pointer;
+  width: 5rem;
+  height: 1rem;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburguer-top,
+.hamburguer-middle,
+.hamburguer-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburguer-middle {
+  transform: translateY(10px);
+}
+
+.hamburguer-bottom {
+  transform: translateY(20px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburguer-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburguer-middle {
+  display: none;
+}
+
+.open .hamburguer-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+/*OVERFLOW*/
+.overflow-y-hidden {
+  overflow-y: hidden;
+}

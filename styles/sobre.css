@@ -1,0 +1,39 @@
+@import "_reset.css";
+@import "_variables.css";
+@import "_utility.css";
+@import "_global.css";
+
+.container-sobre {
+  padding-left: 20rem;
+  padding-right: 18rem;
+}
+
+#menu-mobile button {
+  display: block;
+}
+
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: var(--color-background);
+  left: 0;
+  right: 0;
+  height: calc(100vh - var(--padding-small) - 10rem);
+}
+
+@media screen and (max-width: 1400px) {
+  .container-sobre {
+    padding-left: 14rem;
+    padding-right: 10rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-sobre {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
