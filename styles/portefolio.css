@@ -1,7 +1,7 @@
-@import "_reset.css";
-@import "_variables.css";
-@import "_utility.css";
-@import "_global.css";
+@import "reset.css";
+@import "variables.css";
+@import "utility.css";
+@import "global.css";
 
 #menu-mobile button {
   display: block;
