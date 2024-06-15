@@ -67,6 +67,14 @@ textarea {
   resize: none;
 }
 
+.success-color {
+  background-color: var(--color-success);
+}
+
+.error-color {
+  background-color: var(--color-error);
+}
+
 #submit-form {
   height: 50px;
   font-family: var(--font-main);
@@ -90,13 +98,13 @@ textarea {
   align-items: center;
   position: absolute;
   background-color: var(--color-background);
-  left: 0;
-  right: 0;
-  height: calc(100vh - var(--padding-small) - 8rem);
-}
 
-footer {
-  margin-top: auto;
+  right: 0;
+  height: calc(100vh - var(--padding-small) - 5rem);
+  transition: 0.5s;
+  z-index: 999;
+  transform-origin: center right;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {

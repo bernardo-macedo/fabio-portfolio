@@ -4,8 +4,8 @@
 @import "global.css";
 
 .container-sobre {
-  padding-left: 20rem;
-  padding-right: 18rem;
+  padding-left: 24rem;
+  padding-right: 16rem;
 }
 
 #menu-mobile button {
@@ -19,9 +19,13 @@
   align-items: center;
   position: absolute;
   background-color: var(--color-background);
-  left: 0;
+
   right: 0;
-  height: calc(100vh - var(--padding-small) - 10rem);
+  height: calc(100vh - var(--padding-small) - 5rem);
+  transition: 0.5s;
+  z-index: 999;
+  transform-origin: center right;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1400px) {

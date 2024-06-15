@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>Fabio Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
   </head>
@@ -10,7 +14,11 @@
     <header>
       <section class="is-flex">
         <p class="bt-text text-xsmall">fábio carneiro</p>
-        <img class="image-cover" src="img/home-pic.jpg" alt="" />
+        <img
+          class="image-cover opacity-intro-effect"
+          src="img/home-pic.jpg"
+          alt=""
+        />
       </section>
       <section>
         <div id="menu-mobile">
@@ -20,21 +28,28 @@
               <span class="hamburguer-middle"></span>
               <span class="hamburguer-bottom"></span>
             </button>
-            <a class="logo" href=""><img src="img/logo.png" alt="" /></a>
+            <a class="logo" href="index.html"
+              ><img src="img/logo.png" alt=""
+            /></a>
           </div>
-          <nav class="nav-mobile gap-small text-large translate-full-x">
-            <a href="">portefólio</a><a href="">casamentos</a
-            ><a href="">sobre</a><a href="">contactos</a>
+          <nav class="nav-mobile no-width gap-small text-large">
+            <a href="portefolio.html">portefólio</a><a href="">casamentos</a
+            ><a href="sobre.html">sobre</a
+            ><a href="contactos.html">contactos</a>
             <div class="is-flex justify-center gap-small">
-              <a href=""><img src="img/youtube.svg" alt="" /></a>
-              <a href=""><img src="img/instagram.svg" alt="" /></a>
+              <a href="" target="_blank"
+                ><img src="img/youtube.svg" alt=""
+              /></a>
+              <a href="" target="_blank"
+                ><img src="img/instagram.svg" alt=""
+              /></a>
             </div>
           </nav>
         </div>
 
         <div class="title-font">
           <h1>videografia</h1>
-          <p class="text-small margin-block-large">
+          <p class="text-small margin-top-small margin-bottom-small">
             <!--Alterar margin block, mais reduzido em baixo-->
 
             [vi&nbsp;&centerdot;&nbsp;de&nbsp;&centerdot;&nbsp;o
@@ -44,14 +59,14 @@
             >
           </p>
           <ol class="text-small">
-            <li class="margin-block-small">
+            <li class="margin-block-xsmall">
               processo de telecomunicação que permite a visualização de imagens
               alfanuméricas e gráficas num ecrã.
             </li>
-            <li class="text-medium font-bold margin-block-small">
+            <li class="text-medium font-bold margin-block-xsmall">
               gravação ou edição de vídeos.
             </li>
-            <li class="margin-block-small">
+            <li class="margin-block-xsmall">
               Edição de programas audiovisuais.
             </li>
             ...
@@ -59,18 +74,14 @@
         </div>
         <nav class="text-medium padding-medium-x">
           <ul class="margin-block-large">
-            <li><a href="">portefólio</a></li>
+            <li><a href="portefolio.html">portefólio</a></li>
             &VerticalLine;
             <li><a href="">casamentos</a></li>
             &VerticalLine;
-            <li><a href="">sobre</a></li>
+            <li><a href="sobre.html">sobre</a></li>
             &VerticalLine;
-            <li><a href="">contactos</a></li>
+            <li><a href="contactos.html">contactos</a></li>
           </ul>
-          <div class="is-flex justify-center gap-small">
-            <a href=""><img src="img/youtube.svg" alt="" /></a>
-            <a href=""><img src="img/instagram.svg" alt="" /></a>
-          </div>
         </nav>
       </section>
     </header>

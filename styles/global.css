@@ -24,10 +24,24 @@ img {
 
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding-inline: var(--padding-xlarge);
-  padding-block: var(--padding-small);
+  align-items: center;
+  gap: var(--spacing-medium);
+  padding-block: var(--padding-medium);
   background: #90909120;
+  margin-top: auto;
+  font-size: var(--text-small);
+}
+
+footer #contactos a {
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  footer #contactos {
+    flex-direction: column;
+  }
 }
 
 footer a:hover {

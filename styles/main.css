@@ -15,6 +15,12 @@ header {
   gap: var(--spacing-medium);
 }
 
+@media screen and (min-width: 1920px) {
+  header {
+    max-width: 1920px;
+  }
+}
+
 header > section:first-child {
   overflow: hidden;
 }
@@ -55,9 +61,13 @@ header ol {
     align-items: center;
     position: absolute;
     background-color: var(--color-background);
-    left: 0;
+
     right: 0;
     height: calc(100vh - var(--padding-small) - 6rem);
+    transition: 0.5s;
+    z-index: 999;
+    transform-origin: center right;
+    overflow: hidden;
   }
 }
 

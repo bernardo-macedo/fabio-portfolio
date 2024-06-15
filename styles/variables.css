@@ -19,6 +19,8 @@
   --color-main: #282829;
   --color-secondary: #909091;
   --color-background: #ededed;
+  --color-success: #cfe8a3;
+  --color-error: #fa9aa0;
 
   /*NAV LOGO SIZE*/
   --logo-width: 5rem;
@@ -26,7 +28,7 @@
   /*SPACING*/
   --spacing-xsmall: 0.5rem;
   --spacing-small: 1rem;
-  --spacing-medium: 3rem;
+  --spacing-medium: 2rem;
   --spacing-large: 5rem;
 
   /*PADDING*/

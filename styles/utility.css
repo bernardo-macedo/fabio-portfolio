@@ -60,6 +60,10 @@
 }
 
 /*TEXT*/
+.text-white {
+  color: #fff;
+}
+
 .text-xsmall {
   font-size: var(--text-xsmall);
 }
@@ -212,6 +216,7 @@
 .container {
   padding-inline: var(--padding-xlarge);
   padding-block: var(--padding-xsmall);
+  margin-bottom: var(--margin-large);
 }
 
 @media screen and (max-width: 1125px) {
@@ -223,6 +228,10 @@
 /*WIDTH*/
 .full-width {
   width: 100%;
+}
+
+.no-width {
+  width: 0%;
 }
 
 /*DISPLAY*/
@@ -251,6 +260,10 @@
   height: 1rem;
   transition: all 0.25s;
   position: relative;
+}
+
+.hamburguer:hover {
+  opacity: 0.5;
 }
 
 .hamburguer-top,
@@ -294,4 +307,33 @@
 /*OVERFLOW*/
 .overflow-y-hidden {
   overflow-y: hidden;
+}
+
+/*ANIMATION*/
+@keyframes opacityIntroEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.opacity-intro-effect {
+  animation: opacityIntroEffect 0.8s ease-out;
+}
+
+@keyframes introEffect {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.intro-effect {
+  animation: introEffect 0.8s ease-out;
 }
