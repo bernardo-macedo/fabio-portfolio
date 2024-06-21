@@ -111,8 +111,7 @@ textarea {
   h1 {
     padding-inline: 0rem;
   }
-  form,
-  #contactos {
+  form {
     padding-left: 0rem;
     padding-right: 0rem;
   }

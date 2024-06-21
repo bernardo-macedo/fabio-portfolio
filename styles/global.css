@@ -34,13 +34,23 @@ footer {
   font-size: var(--text-small);
 }
 
+#contactos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--spacing-medium);
+}
+
+#contactos div {
+  justify-self: center;
+}
+
 footer #contactos a {
   text-align: center;
 }
 
 @media screen and (max-width: 480px) {
   footer #contactos {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 
