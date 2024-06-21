@@ -11,6 +11,16 @@ body {
   flex-direction: column;
 }
 
+header {
+  padding-top: var(--padding-large);
+}
+
+@media screen and (max-width: 1125px) {
+  header {
+    padding-top: var(--padding-small);
+  }
+}
+
 h1 {
   font-weight: var(--font-regular);
   font-size: var(--text-title);

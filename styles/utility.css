@@ -219,7 +219,7 @@
 /*CONTAINER*/
 .container {
   padding-inline: var(--padding-xlarge);
-  padding-block: var(--padding-xsmall);
+
   margin-bottom: var(--margin-large);
   max-width: 1920px;
   margin-inline: auto;
