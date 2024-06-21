@@ -15,7 +15,7 @@ header {
   gap: var(--spacing-medium);
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 2000px) {
   header {
     max-width: 1920px;
     margin-inline: auto;
