@@ -15,7 +15,7 @@
 .nav-mobile {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-top: var(--padding-large);
   align-items: center;
   position: absolute;
   background-color: var(--color-background);

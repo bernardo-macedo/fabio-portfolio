@@ -3,6 +3,10 @@
 @import "utility.css";
 @import "global.css";
 
+h1 {
+  padding-inline-start: var(--padding-large);
+}
+
 #menu-mobile button {
   display: block;
 }
@@ -61,7 +65,7 @@
 .nav-mobile {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-top: var(--padding-large);
   align-items: center;
   position: absolute;
   background-color: var(--color-background);
@@ -102,6 +106,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  h1 {
+    padding-inline-start: 0;
+  }
+
   .video-container {
     margin-top: 5rem;
   }
