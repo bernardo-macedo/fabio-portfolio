@@ -3,6 +3,11 @@
 @import "utility.css";
 @import "global.css";
 
+.container-contactos {
+  padding-left: 25rem;
+  padding-right: 15rem;
+}
+
 h1 {
   padding-inline: 5rem;
 }
@@ -118,5 +123,25 @@ textarea {
 
   form > div:first-of-type {
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .container-contactos {
+    padding-left: 20rem;
+    padding-right: 15rem;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .container-contactos {
+    padding-left: 10rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container-contactos {
+    padding-inline: var(--padding-medium);
   }
 }
