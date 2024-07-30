@@ -200,6 +200,10 @@
   margin-top: var(--spacing-large);
 }
 
+.margin-bottom-large {
+  margin-bottom: var(--spacing-large);
+}
+
 .margin-block-xsmall {
   margin-block: var(--spacing-xsmall);
 }

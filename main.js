@@ -28,7 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
   masonryContainer.innerHTML = projects
     .map(
       (project, index) =>
-        `<div data-project-id="${index}" class="item opacity-intro-effect" style="height: ${project.height}px; background: center no-repeat url(${project.image}); background-size: cover;">${project.title}</div>`
+        `<div data-project-id="${index}" class="project-card item opacity-intro-effect" style="height: ${project.height}px; background: center no-repeat url(${project.image}); background-size: cover;">
+          <div><h3>${project.title}</h3></div>
+          <div>
+            <p>ano: <span>${project.year}</span></p>
+            <p>categoria: <span>${project.tags[1]}</span></p>
+          </div>
+          </div>`
     )
     .join("");
   createMasonry();
@@ -42,7 +48,13 @@ categoriesFilter.forEach((category) => {
     masonryContainer.innerHTML = projects
       .map((project, index) => {
         if (project.tags.includes(event.target.value)) {
-          return `<div data-project-id="${index}" class="item opacity-intro-effect" style="height: ${project.height}px; background: no-repeat url(${project.image})">${project.title}</div>`;
+          return `<div data-project-id="${index}" class="project-card item opacity-intro-effect" style="height: ${project.height}px; background: center no-repeat url(${project.image}); background-size: cover;">
+          <div><h3>${project.title}</h3></div>
+          <div>
+            <p>ano: <span>${project.year}</span></p>
+            <p>categoria: <span>${project.tags[1]}</span></p>
+          </div>
+          </div>`;
         }
       })
       .join("");
@@ -80,13 +92,19 @@ function handleModal() {
       const projectId = card.dataset.projectId;
       const selectedProject = projects[projectId];
 
-      document.querySelector(
-        "#modal-project"
-      ).innerHTML = `<div class="video-container">${selectedProject.url}</div>
-      <div class="project-title is-flex justify-center text-white">
-      <h3>${selectedProject.title}</h3></div>
+      const videosAndTitles = selectedProject.details
+        .map((project) => {
+          return `<div class="video-container">${project.url}</div>
+        <div class="project-title is-flex justify-center text-white margin-bottom-large">
+        <h3>${project.title}</h3></div>`;
+        })
+        .join("");
+
+      document.querySelector("#modal-project").innerHTML = `${videosAndTitles}
       <div class="project-description margin-top-medium is-flex justify-center text-white">
-      <p>${selectedProject.description}</p></div>`;
+      <p>${selectedProject.description}</p></div>
+      <div class="project-description margin-top-medium is-flex justify-center text-white">
+      <p>Ano: ${selectedProject.year}</p></div>`;
 
       // Show the modal
       const modal = document.getElementById("modal");
@@ -96,9 +114,27 @@ function handleModal() {
   });
 
   const closeButton = document.getElementById("close-button");
+
   closeButton.addEventListener("click", function () {
     const modal = document.getElementById("modal");
     modal.classList.remove("visible");
     document.body.classList.toggle("overflow-y-hidden");
+
+    stopVideo();
   });
+}
+
+//Close modal when clicking outside of the modal
+window.addEventListener("click", (event) => {
+  const modal = document.getElementById("modal");
+  if (event.target === modal) {
+    modal.classList.remove("visible");
+    document.body.classList.toggle("overflow-y-hidden");
+  }
+});
+
+function stopVideo() {
+  const iframe = document.querySelector("iframe");
+  const iframeSrc = iframe.src;
+  iframe.src = iframeSrc;
 }
