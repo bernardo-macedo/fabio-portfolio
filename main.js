@@ -28,11 +28,17 @@ document.addEventListener("DOMContentLoaded", () => {
   masonryContainer.innerHTML = projects
     .map(
       (project, index) =>
-        `<div data-project-id="${index}" class="project-card item opacity-intro-effect" style="height: ${project.height}px; background: center no-repeat url(${project.image}); background-size: cover;">
+        `<div data-project-id="${index}" class="project-card item opacity-intro-effect" style="height: ${
+          project.height
+        }px; background: center no-repeat url(${
+          project.image
+        }); background-size: cover;">
           <div><h3>${project.title}</h3></div>
           <div>
             <p>ano: <span>${project.year}</span></p>
-            <p>categoria: <span>${project.tags[1]}</span></p>
+            <p>categoria: <span>${project.tags.filter(
+              (tag) => tag !== "todos"
+            )}</span></p>
           </div>
           </div>`
     )
@@ -48,11 +54,17 @@ categoriesFilter.forEach((category) => {
     masonryContainer.innerHTML = projects
       .map((project, index) => {
         if (project.tags.includes(event.target.value)) {
-          return `<div data-project-id="${index}" class="project-card item opacity-intro-effect" style="height: ${project.height}px; background: center no-repeat url(${project.image}); background-size: cover;">
+          return `<div data-project-id="${index}" class="project-card item opacity-intro-effect" style="height: ${
+            project.height
+          }px; background: center no-repeat url(${
+            project.image
+          }); background-size: cover;">
           <div><h3>${project.title}</h3></div>
           <div>
             <p>ano: <span>${project.year}</span></p>
-            <p>categoria: <span>${project.tags[1]}</span></p>
+            <p>categoria: <span>${project.tags.filter(
+              (tag) => tag !== "todos"
+            )}</span></p>
           </div>
           </div>`;
         }
@@ -94,17 +106,18 @@ function handleModal() {
 
       const videosAndTitles = selectedProject.details
         .map((project) => {
-          return `<div class="video-container">${project.url}</div>
-        <div class="project-title is-flex justify-center text-white margin-bottom-large">
-        <h3>${project.title}</h3></div>`;
+          return `<div class="project-title">
+         <h3>${project.title}</h3>
+            <h4>${project.year}</h4>
+        </div>
+        <div class="video-container">${project.url}</div>
+        `;
         })
         .join("");
 
       document.querySelector("#modal-project").innerHTML = `${videosAndTitles}
       <div class="project-description margin-top-medium is-flex justify-center text-white">
-      <p>${selectedProject.description}</p></div>
-      <div class="project-description margin-top-medium is-flex justify-center text-white">
-      <p>Ano: ${selectedProject.year}</p></div>`;
+      <p>${selectedProject.description}</p></div>`;
 
       // Show the modal
       const modal = document.getElementById("modal");

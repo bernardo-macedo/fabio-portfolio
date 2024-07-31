@@ -11,6 +11,7 @@ const projects = [
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/0m3q2K01ajA?si=w4f4iGRVtUQ2JgYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Apotheus - The Unification Project",
+        year: 2023,
       },
     ],
   },
@@ -27,10 +28,12 @@ const projects = [
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/dzn0bgMeV0U?si=w1BzkxiZpMjkFffn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Justwood - Because Simple Is Great",
+        year: 2022,
       },
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/dzn0bgMeV0U?si=w1BzkxiZpMjkFffn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Justwood - Because Simple Is Great",
+        year: 2022,
       },
     ],
   },
@@ -47,6 +50,7 @@ const projects = [
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/WIqrMP4bP_0?si=GjrmOYGHGMLQ6z_O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Agrival 2022 - Enne C & Dj Tika (Teaser)",
+        year: 2022,
       },
     ],
   },
@@ -63,6 +67,7 @@ const projects = [
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/K6iqw4xbLWw?si=eI49_Bkn8Dgt-m82" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Cláudia e Marco (Teaser)",
+        year: 2022,
       },
     ],
   },
@@ -79,6 +84,7 @@ const projects = [
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/vddNNUsmEeQ?si=zCBvnuLowUjqNgmj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Fresh Mountain",
+        year: 2022,
       },
     ],
   },
@@ -95,6 +101,7 @@ const projects = [
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/CphPNPco4rE?si=_17iNFJgCl9nFyV7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Redboxstudios",
+        year: 2021,
       },
     ],
   },
@@ -109,6 +116,7 @@ const projects = [
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/-oPkyRDviOQ?si=EzsMMt-6X2x9Nglr&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Georgina Vieira",
+        year: 2021,
       },
     ],
   },
@@ -124,6 +132,7 @@ const projects = [
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/MHrprXf056U?si=jz-30lasggpDXLNB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Filipa e Jorge (Teaser)",
+        year: 2021,
       },
     ],
   },
@@ -139,6 +148,7 @@ const projects = [
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Gj2yOA_EVbg?si=oDXd_TzMAbo7Gu0O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Firaga - Oceans Of Apathy",
+        year: 2021,
       },
     ],
   },
@@ -154,6 +164,7 @@ const projects = [
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/vLFrCOQXcq4?si=k6ZMFNfwleADlNjb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Clara e Rui (Teaser)",
+        year: 2021,
       },
     ],
   },
@@ -169,6 +180,7 @@ const projects = [
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/OfLHr0Jh8N4?si=H6u2sHMfOjr1UJzH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Apotheus - Save Our Ship",
+        year: 2020,
       },
     ],
   },
@@ -184,6 +196,7 @@ const projects = [
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/hP-J1cwdC1Q?si=6-6E5bm0wM6t2WyC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Sessão de Natal - P'ra Vida Store",
+        year: 2020,
       },
     ],
   },
@@ -199,6 +212,7 @@ const projects = [
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/aKILC97kLCs?si=D932l-Telh8K5o5B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Joana e Renato (Teaser)",
+        year: 2020,
       },
     ],
   },
@@ -214,6 +228,7 @@ const projects = [
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Un48UaFso5g?si=zisWpq1YCiEzPDD3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Bolos da Nokas",
+        year: 2020,
       },
     ],
   },
@@ -229,6 +244,7 @@ const projects = [
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Wp1JPbX553Q?si=ywl8a-F-vuc1bNLa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Malta",
+        year: 2019,
       },
     ],
   },
@@ -244,6 +260,7 @@ const projects = [
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Pq1Cs1Ovl68?si=CFQgG_8ytl2t2n-R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Liliana e Roberto - Let's suppose",
+        year: 2019,
       },
     ],
   },
@@ -260,6 +277,7 @@ const projects = [
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/4RcSeNDcLo0?si=S2Q_IAvGogtynFrF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Quinta da Foz",
+        year: 2019,
       },
     ],
   },
@@ -276,6 +294,7 @@ const projects = [
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/9t2oL1v5q18?si=A8mOoCA6pNGdJ4ge" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Sunday Walk",
+        year: 2019,
       },
     ],
   },
@@ -292,6 +311,7 @@ const projects = [
       {
         url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/a-gjKxBOsng?si=GR16pnKRIrzy2uMj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
         title: "Gil e Su (Teaser)",
+        year: 2019,
       },
     ],
   },
