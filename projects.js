@@ -1,7 +1,7 @@
 const projects = [
   {
     title: "Apotheus - The Unification Project",
-    image: "img/projects/unification.jpg",
+    image: "",
     image_alt: "",
     tags: ["todos", "musica"],
     height: 500,

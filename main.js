@@ -30,9 +30,10 @@ document.addEventListener("DOMContentLoaded", () => {
       (project, index) =>
         `<div data-project-id="${index}" class="project-card item opacity-intro-effect" style="height: ${
           project.height
-        }px; background: center no-repeat url(${
-          project.image
-        }); background-size: cover;">
+        }px; ${
+          project.image.length > 0 &&
+          `background: center no-repeat url(${project.image}); background-size: cover;`
+        } ">
           <div><h3>${project.title}</h3></div>
           <div>
             <p>ano: <span>${project.year}</span></p>
@@ -56,9 +57,10 @@ categoriesFilter.forEach((category) => {
         if (project.tags.includes(event.target.value)) {
           return `<div data-project-id="${index}" class="project-card item opacity-intro-effect" style="height: ${
             project.height
-          }px; background: center no-repeat url(${
-            project.image
-          }); background-size: cover;">
+          }px; ${
+            project.image.length > 0 &&
+            `background: center no-repeat url(${project.image}); background-size: cover;`
+          } ">
           <div><h3>${project.title}</h3></div>
           <div>
             <p>ano: <span>${project.year}</span></p>
